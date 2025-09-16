@@ -1,117 +1,39 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторні та практичні роботи</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-        header {
-            margin-bottom: 20px;
-        }
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
 
-        header ul {
-            list-style: none;
-            padding: 10px;
-            display: flex;
-            gap: 15px;
-            background-color: #0073e6;
-            border-radius: 6px;
-        }
+header ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
 
-        header ul li a {
-            text-decoration: none;
-            color: white; /* меню белый текст */
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background-color 0.3s, color 0.3s;
-        }
+header ul li a:hover {
+    color: red;
+}
 
-        header ul li a:hover {
-            background-color: white;
-            color: #0073e6;
-        }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-        main h1 {
-            color: #0073e6;
-            margin-bottom: 15px;
-        }
+th, td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: left;
+}
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        ul li {
-            background-color: white;
-            color: #333; /* темный текст внутри карточек */
-            margin-bottom: 10px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        ul li a {
-            color: #333; /* ссылки тоже темные */
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            text-decoration: underline;
-            color: #0073e6; /* немного выделяется при наведении */
-        }
-
-        footer {
-            margin-top: 30px;
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
-            <li><a href="practical.html">Практичні роботи</a></li>
-            <li><a href="lab.html">Лабораторні роботи</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <h1>Практичні роботи</h1>
-    <ul>
-        <li><a href="https://violettalubitivana.neocities.org/">Практична робота 1</a></li>
-        <li><a href="#" onclick="return false;">Практична робота 2</a></li>
-    </ul>
-
-    <h1>Лабораторні роботи</h1>
-    <ul>
-        <li><a href="lab1.html">Лабораторна робота 1</a></li>
-        <li><a href="lab2.html">Лабораторна робота 2</a></li>
-        <li><a href="lab3.html">Лабораторна робота 3</a></li>
-    </ul>
-</main>
-
-<footer>
-    <p>Контакти: pvsergeevnaa@gmail.com</p>
-</footer>
-
-</body>
-</html>
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
