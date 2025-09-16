@@ -21,13 +21,13 @@
             padding: 10px 20px;
             display: flex;
             gap: 20px;
-            background-color: #0073e6;
+            background-color: #0073e6; /* синий фон меню */
             border-radius: 8px;
         }
 
         header ul li a {
             text-decoration: none;
-            color: white;
+            color: white; /* белый текст */
             font-weight: bold;
             padding: 8px 12px;
             border-radius: 4px;
@@ -53,21 +53,22 @@
 
         ul li {
             margin-bottom: 15px;
-            background-color: white;
+            background-color: #e6f0ff; /* светло-синий фон */
             padding: 12px 15px;
             border-radius: 6px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
         ul li a {
-            color: #0073e6;
+            color: #0073e6; /* синий текст */
             font-weight: bold;
             text-decoration: none;
         }
 
         ul li:hover {
             transform: translateY(-2px);
+            background-color: #cce6ff; /* чуть более яркий при hover */
         }
 
         ul li a:hover {
