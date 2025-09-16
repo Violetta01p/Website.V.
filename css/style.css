@@ -27,7 +27,7 @@
 
         header ul li a {
             text-decoration: none;
-            color: black; 
+            color: white; /* меню белый текст */
             font-weight: bold;
             padding: 5px 10px;
             border-radius: 4px;
@@ -53,7 +53,7 @@
 
         ul li {
             background-color: white;
-            color: #333; 
+            color: #333; /* темный текст внутри карточек */
             margin-bottom: 10px;
             padding: 10px 15px;
             border-radius: 5px;
@@ -61,14 +61,14 @@
         }
 
         ul li a {
-            color: #333; 
+            color: #333; /* ссылки тоже темные */
             font-weight: bold;
             text-decoration: none;
         }
 
         ul li a:hover {
             text-decoration: underline;
-            color: #0073e6; 
+            color: #0073e6; /* немного выделяется при наведении */
         }
 
         footer {
