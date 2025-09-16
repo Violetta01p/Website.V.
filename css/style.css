@@ -1,39 +1,71 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    background-color: #cce6ff;
+    border-radius: 8px;
 }
 
 header ul li a {
     text-decoration: none;
-    color: darkblue;
+    color: #0073e6;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 header ul li a:hover {
-    color: red;
+    background-color: #0073e6;
+    color: white;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    background-color: white;
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 5px 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
 }
 
+th {
+    background-color: #0073e6;
+    color: white;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
 footer {
-    margin-top: 20px;
+    margin-top: 30px;
     border-top: 1px solid #ccc;
     padding-top: 10px;
+    font-size: 0.9em;
+    color: #666;
 }
