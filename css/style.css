@@ -8,28 +8,28 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f5f7fa;
+            background-color: #f9f9f9;
             color: #333;
         }
 
         header {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         header ul {
             list-style: none;
-            padding: 10px 20px;
+            padding: 10px;
             display: flex;
-            gap: 20px;
-            background-color: #0073e6; /* синий фон меню */
-            border-radius: 8px;
+            gap: 15px;
+            background-color: #0073e6;
+            border-radius: 6px;
         }
 
         header ul li a {
             text-decoration: none;
-            color: white; /* белый текст */
+            color: white;
             font-weight: bold;
-            padding: 8px 12px;
+            padding: 5px 10px;
             border-radius: 4px;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -40,69 +40,42 @@
         }
 
         main h1 {
-            text-align: center;
             color: #0073e6;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         ul {
+            list-style: none;
             padding-left: 0;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 30px;
         }
 
         ul li {
-            margin-bottom: 15px;
-            background-color: #e6f0ff; /* светло-синий фон */
-            padding: 12px 15px;
-            border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.2s, background-color 0.2s;
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         ul li a {
-            color: #0073e6; /* синий текст */
+            color: #0073e6;
             font-weight: bold;
             text-decoration: none;
-        }
-
-        ul li:hover {
-            transform: translateY(-2px);
-            background-color: #cce6ff; /* чуть более яркий при hover */
         }
 
         ul li a:hover {
             text-decoration: underline;
         }
 
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 6px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 15px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #0073e6;
-            color: white;
-        }
-
         footer {
             margin-top: 30px;
             border-top: 1px solid #ccc;
-            padding-top: 15px;
+            padding-top: 10px;
             text-align: center;
-            color: #666;
             font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
