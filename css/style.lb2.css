@@ -1,0 +1,62 @@
+li:first-child {
+    font-weight: bold;
+}
+
+li > a:last-child {
+    color: red;
+}
+
+input[disabled] {
+    background-color: #ccc;
+}
+
+div > p {
+    font-weight: 600;
+}
+
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+div p {
+    font-size: 16px;
+}
+
+input:checked {
+    accent-color: skyblue;
+}
+
+li > a {
+    text-decoration: underline;
+}
+
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+input[type="text"]:not([disabled]) {
+    background-color: #eee;
+}
+
+p:first-child {
+    font-size: 24px;
+}
+
+.special + li {
+    text-decoration: line-through;
+}
+
+p::first-letter {
+    font-size: 36px;
+}
+
+a::after {
+    content: " ↗";
+}
+li > a:last-child[href^="http"] {
+    color: green; 
+}
