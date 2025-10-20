@@ -1,0 +1,112 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f0f0f0;
+    margin: 20px;
+    color: #444;
+}
+
+.planner {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #333;
+}
+
+/* Стили для шапки */
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.plan-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: auto; /* Расталкивает WEEKLY PLAN и остальные заголовки */
+}
+.main-header span {
+    margin-left: 40px;
+}
+
+/* --- Главная сетка для контента --- */
+.planner-grid {
+    display: grid;
+    /* Создаём 4 колонки: первая для сайдбара, остальные 3 для дней */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    /* Высота строк автоматически под контент */
+    grid-auto-rows: minmax(180px, auto);
+}
+
+/* --- Размещение элементов в сетке --- */
+.sidebar {
+    grid-column: 1 / 2; /* Сайдбар занимает первую колонку */
+    grid-row: 1 / 4;    /* и растягивается на все 3 ряда */
+    padding: 20px;
+    border-right: 2px solid #333;
+}
+.day-cell {
+    padding: 20px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+/* Убираем лишнюю левую границу у первой колонки дней */
+.monday, .thursday {
+    border-left: none;
+}
+
+/* --- Размещение дней недели в три ряда --- */
+/* Первый ряд */
+.monday    { grid-column: 2; grid-row: 1; }
+.tuesday   { grid-column: 3; grid-row: 1; }
+.wednesday { grid-column: 4; grid-row: 1; }
+
+/* Второй ряд */
+.thursday  { grid-column: 2; grid-row: 2; }
+.friday    { grid-column: 3; grid-row: 2; }
+.saturday  { grid-column: 4; grid-row: 2; }
+
+/* Третий ряд */
+.sunday    { grid-column: 2; grid-row: 3; }
+.empty1    { grid-column: 3; grid-row: 3; }
+.empty2    { grid-column: 4; grid-row: 3; }
+
+/* --- Стили для полей ввода --- */
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.task-list h3 {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+input:focus {
+    outline: none;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
