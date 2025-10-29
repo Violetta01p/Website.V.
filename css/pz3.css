@@ -101,7 +101,7 @@ body {
 }
 
 .video {
-    width: calc(50% - 10px);
+    width: 200px;
     height: 150px;
     background-color: #cccccc;
     display: flex;
