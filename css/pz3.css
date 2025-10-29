@@ -92,8 +92,10 @@ body {
 }
 
 .videos {
+    flex-grow: 1;
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
     flex: 1;
 }
