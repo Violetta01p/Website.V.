@@ -1,62 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube </title>
-    <link rel="stylesheet" href="css/pz3.css">
+    <meta charset="utf-8">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="practical_3.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">YouTube</div>
-        <input type="text" class="search" placeholder="Пошук">
-        <div class="profile">👤</div>
+    <header class="topbar">
+        <div class="topbar-left"><b>YouTube</b></div>
+        <div class="topbar-center">
+            <form class="search-bar">
+                <input type="text" placeholder="Пошук">
+            </form>
+        </div>
+        <div class="topbar-right">Ваш профіль</div>
     </header>
 
-    <nav class="sub-menu">
-        <a href="#" class="sub-link">Усі</a>
-        <a href="#" class="sub-link">Подкасти</a>
-        <a href="#" class="sub-link">Зараз у ефірі</a>
-    </nav>
+    <div class="page">
+        <aside class="sidebar-left">
+            <nav class="sidebar-menu">
+                <p><strong>Головна</strong></p>
+                <p>Популярне</p>
+                <p>Музика</p>
+                <p>Фільми</p>
+            </nav>
+            <nav class="sidebar-you">
+                <p><strong>Ви</strong></p>
+                <p>Ваш канал</p>
+                <p>Історія</p>
+                <p>Ваші відео</p>
+            </nav>
+            <nav class="sidebar-subscriptions">
+                <p><strong>Підписки</strong></p>
+                <p>Канал 1</p>
+                <p>Канал 2</p>
+                <p>Канал 3</p>
+            </nav>
+        </aside>
 
-    <main class="main">
-       <aside class="sidebar">
-    <div class="sidebar-section">
-        <ul>
-            <li><a href="#" class="menu-link">Головна</a></li>
-            <li><a href="#" class="menu-link">YouTube Shorts</a></li>
-            <li><a href="#" class="menu-link">Підписки</a></li>
-            <li><a href="#" class="menu-link">YouTube Music</a></li>
-        </ul>
-    </div>
+        <main class="content">
+            <section class="content-topbar">
+                <div>Музика</div>
+                <div>Новини</div>
+                <div>Подкасти</div>
+            </section>
 
-    <div class="sidebar-section">
-        <p class="section-title">Ви</p>
-        <ul>
-            <li><a href="#" class="menu-link">Ваш канал</a></li>
-            <li><a href="#" class="menu-link">Історія</a></li>
-            <li><a href="#" class="menu-link">Ваші відео</a></li>
-            <li><a href="#" class="menu-link">Переглянуті пізніше</a></li>
-        </ul>
-    </div>
-
-    <div class="sidebar-section">
-        <p class="section-title">Підписки</p>
-        <ul>
-            <li><a href="#" class="menu-link">Канал 1</a></li>
-            <li><a href="#" class="menu-link">Канал 2</a></li>
-            <li><a href="#" class="menu-link">Канал 3</a></li>
-        </ul>
-    </div>
-</aside>
-        <section class="videos">
-            <div class="video">Відео 1</div>
-            <div class="video">Відео 2</div>
-            <div class="video">Відео 3</div>
-            <div class="video">Відео 4</div>
-            <div class="video">Відео 5</div>
-            <div class="video">Відео 6</div>
-        </section>
-    </main>
+            <section class="video-grid">
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 1</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 2</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 3</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 4</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 5</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 6</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 7</h3>
+                </article>
+                <article class="video-card">
+                    <div class="video-img"></div>
+                    <h3>Відео 8</h3>
+                </article>
+            </section>
+        </main>
+    </div>    
 </body>
+
 </html>
