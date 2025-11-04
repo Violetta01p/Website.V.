@@ -1,64 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 body {
-    background: #1d1d1d;
-    font-family: 'Roboto Mono', monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
 }
 
 .keyboard {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 20px;
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .row {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 6px;
 }
 
 .key {
-    background: #2c2c2c;
-    color: white;
-    border-radius: 6px;
-    text-align: center;
-    padding: 12px 0;
-    width: 60px;
-    box-shadow: 0 2px 0 #000;
-    transition: 0.1s;
+  background: #3d3d3d;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  min-width: 45px;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .key:active {
-    background: #4a90e2;
-    transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #0f0f0f;
+  background: #2f2f2f;
 }
 
-.backspace { width: 120px; }
-.tab { width: 80px; }
+/* Ширина особых клавиш */
+.backspace { width: 100px; }
+.tab { width: 70px; }
 .caps { width: 90px; }
-.enter { width: 110px; }
-.shift { width: 120px; }
-.ctrl { width: 70px; }
+.enter { width: 100px; }
+.lshift { width: 120px; }
+.rshift { width: 140px; }
 .space { width: 300px; }
-.zero { width: 125px; }
+.ctrl, .alt, .win { width: 60px; }
 
-.numpad {
-    display: grid;
-    grid-template-columns: repeat(4, 60px);
-    gap: 5px;
+/* Средний блок */
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  gap: 6px;
 }
 
 .arrows {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-areas:
+    ". up ."
+    "left down right";
+  gap: 6px;
+}
+
+.arrow-up { grid-area: up; }
+.arrow-left { grid-area: left; }
+.arrow-down { grid-area: down; }
+.arrow-right { grid-area: right; }
+
+/* NumPad */
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 6px;
+}
+
+.numpad .enter {
+  grid-row: span 2;
+  height: 106px;
+}
+
+.numpad .zero {
+  grid-column: span 2;
 }
