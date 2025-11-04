@@ -11,16 +11,17 @@ body {
 
 .keyboard {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 1200px;
-    gap: 10px;
+    gap: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .row {
     display: flex;
-    justify-content: center;
-    width: 100%;
     gap: 5px;
 }
 
@@ -36,33 +37,28 @@ body {
 }
 
 .key:active {
-    background: #555;
+    background: #4a90e2;
     transform: translateY(2px);
 }
 
-.backspace { width: 130px; }
-.tab { width: 90px; }
-.caps { width: 100px; }
-.enter { width: 120px; }
-.shift { width: 130px; }
+.backspace { width: 120px; }
+.tab { width: 80px; }
+.caps { width: 90px; }
+.enter { width: 110px; }
+.shift { width: 120px; }
 .ctrl { width: 70px; }
-.space { width: 350px; }
-.small { width: 60px; }
+.space { width: 300px; }
+.zero { width: 125px; }
 
 .numpad {
     display: grid;
     grid-template-columns: repeat(4, 60px);
     gap: 5px;
-    margin-left: 30px;
-}
-
-.zero {
-    grid-column: span 2;
 }
 
 .arrows {
     display: flex;
     justify-content: center;
-    width: 200px;
-    margin-top: -20px;
+    gap: 5px;
+    margin-top: 10px;
 }
