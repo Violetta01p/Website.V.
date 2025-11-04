@@ -1,73 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    background: #eef1f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin-bottom: 25px;
-    color: #333;
+  margin: 0;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono' , monospace;
 }
 
 .keyboard {
-    width: 100%;
-    max-width: 1400px;
-    background: #d1d5db;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  gap: 20px;
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 100%;
+  display: flex;
+  gap: 6px;
 }
 
-.key {
-    background: #ffffff;
-    border: none;
-    padding: 15px 0;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 500;
-    text-align: center;
-    flex: 1;
-    cursor: pointer;
-    box-shadow: 0 4px 0px #9ca3af;
-    transition: all 0.1s ease-out;
+.key, .num {
+  background: #3d3d3d;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  min-width: 45px;
+  transition: all 0.1s ease;
+  cursor: pointer;
 }
 
-.key:hover {
-    background: #f3f4f6;
+.key:active, .num:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #0f0f0f;
+  background: #2f2f2f;
 }
 
-.key:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0px #9ca3af;
-    background: #e5e7eb;
+.backspace { width: 100px; }
+.tab { width: 70px; }
+.caps { width: 80px; }
+.enter { width: 100px; }
+.shift { width: 100px; }
+.space { width: 250px; }
+.ctrl, .alt, .win { width: 60px; }
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-auto-rows: 50px;
+  gap: 6px;
 }
 
-.wide {
-    flex: 1.5;
+.num.enter {
+  grid-row: span 2;
+  height: 106px;
 }
 
-.extra-wide {
-    flex: 2.5;
-}
-
-.space {
-    flex: 7;
+.num.zero {
+  grid-column: span 2;
 }
