@@ -1,106 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-
 body {
-  margin: 0;
-  background: #1f1f1f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Roboto Mono', monospace;
-  color: #fff;
+    margin: 0;
+    background: #DDCDBA; 
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333;
+    font-size: 13px;
 }
 
-.keyboard {
-  display: flex;
-  gap: 20px;
-  background: #2d2d2d;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+.keypad-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 24px; 
+    padding: 24px;
+    background: #AE9C88; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    width: max-content;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
 }
 
-.row {
-  display: flex;
-  gap: 6px;
+.key-row {
+    display: flex;
+    gap: 6px;
 }
 
-.key {
-  background: #3d3d3d;
-  border-radius: 5px;
-  box-shadow: 0 2px 0 #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-  min-width: 45px;
-  transition: 0.1s;
-  cursor: pointer;
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2E9DA;
+    color: #333333;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #8E7D69; 
+    height: 44px;
+    min-width: 44px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+    font-weight: bold;
 }
 
-.key:active {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 #0f0f0f;
-  background: #2f2f2f;
+.button:hover {
+    background: #FFFFFF;
 }
 
-/* Ширина особых клавиш */
-.backspace { width: 100px; }
-.tab { width: 70px; }
-.caps { width: 90px; }
-.enter { width: 100px; }
-.lshift { width: 120px; }
-.rshift { width: 140px; }
-.space { width: 300px; }
-.ctrl, .alt, .win { width: 60px; }
-
-/* Средний блок */
-.middle {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: space-between;
-  align-items: center;
+.button:active {
+    background: #E0D8C9;
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #8E7D69;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: repeat(3, 45px);
-  gap: 6px;
+.back,
+.tab,
+.caps {
+    width: 96px;
 }
 
-.arrows {
-  display: grid;
-  grid-template-areas:
-    ". up ."
-    "left down right";
-  gap: 6px;
+.ctrl,
+.win,
+.alt,
+.fn,
+.menu {
+    width: 56px;
 }
 
-.arrow-up { grid-area: up; }
-.arrow-left { grid-area: left; }
-.arrow-down { grid-area: down; }
-.arrow-right { grid-area: right; }
+.return { width: 92px; }
+.l-shift { width: 108px; }
+.r-shift { width: 128px; }
+.spacebar { width: 300px; }
 
-/* NumPad */
-.numpad {
-  display: grid;
-  grid-template-columns: repeat(4, 50px);
-  grid-template-rows: repeat(5, 50px);
-  gap: 6px;
+.small-text { font-size: 10px; }
+
+.spacer { width: 29px; }
+
+.nav-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
 }
 
-.numpad .enter {
-  grid-row: span 2;
-  height: 106px;
+.arrow-pad {
+    margin-top: 42px;
+    display: grid;
+    grid-template-areas:
+        ". up ."
+        "left down right";
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
 }
 
-.numpad .zero {
-  grid-column: span 2;
+.arrow.arrow-up { grid-area: up; }
+.arrow.arrow-left { grid-area: left; }
+.arrow.arrow-down { grid-area: down; }
+.arrow.arrow-right { grid-area: right; }
+
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 44px);
+    grid-template-rows: repeat(5, 44px);
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
+
+.number-pad .add {
+    grid-row: span 2;
+    height: 94px;
+}
+
+.number-pad .return {
+    grid-column: 4;
+    grid-row: 4 / span 2;
+    height: 94px;
+    width: 44px;
+}
+
+.number-pad .num-zero {
+    grid-column: span 2;
+}
+
