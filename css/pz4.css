@@ -63,7 +63,7 @@ body {
 .caps {
     width: 96px;
 }
-.tab {
+.caps{
     grid-column: 7 / 9; /* Сайдбар занимает первую колонку */
     grid-row: 3 / 5;
 
