@@ -12,7 +12,7 @@ body {
 
 .keypad-layout {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: auto auto auto; 
     gap: 24px; 
     padding: 24px;
     background: #AE9C88; 
@@ -22,14 +22,10 @@ body {
 }
 
 .main-section {
-    display: flex;
-    flex-direction: column;
-    gap: 6px; 
-}
-
-.key-row {
-    display: flex;
+    display: grid;
     gap: 6px;
+    grid-template-columns: repeat(15, 44px);
+    grid-template-rows: 32px repeat(5, 44px);
 }
 
 .button {
@@ -40,12 +36,11 @@ body {
     color: #333333;
     border-radius: 6px;
     box-shadow: 0 3px 0 #8E7D69; 
-    height: 44px;
-    min-width: 44px;
     cursor: pointer;
     transition: all 0.15s ease;
     position: relative;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .button:hover {
@@ -58,36 +53,116 @@ body {
     box-shadow: 0 1px 0 #8E7D69;
 }
 
-.back,
-.tab,
-.caps {
-    width: 96px;
-}
-.caps{
-    grid-column: 7 / 9; /* Сайдбар занимает первую колонку */
-    grid-row: 3 / 5; }
-
-.ctrl,
-.win,
-.alt,
-.fn,
-.menu {
-    width: 56px;
+.small-text { 
+    font-size: 10px; 
 }
 
-.return { width: 92px; }
-.l-shift { width: 108px; }
-.r-shift { width: 128px; }
-.spacebar { width: 300px; }
 
-.small-text { font-size: 10px; }
+.key-esc { grid-column: 1 / 2; }
+.key-f1  { grid-column: 2 / 3; }
+.key-f2  { grid-column: 3 / 4; }
+.key-f3  { grid-column: 4 / 5; }
+.key-f4  { grid-column: 5 / 6; }
+.key-f5  { grid-column: 6 / 7; }
+.key-f6  { grid-column: 7 / 8; }
+.key-f7  { grid-column: 8 / 9; }
+.key-f8  { grid-column: 9 / 10; }
+.key-f9  { grid-column: 10 / 11; }
+.key-f10 { grid-column: 11 / 12; }
+.key-f11 { grid-column: 12 / 13; }
 
-.spacer { width: 29px; }
+.key-f12 { grid-column: 13 / 16; } 
+
+
+.key-tilde { 
+    grid-row: 2; 
+    grid-column: 1; 
+}
+
+.key-backspace {
+    grid-column: 14 / 16;
+    grid-row: 2;
+}
+
+.key-tab {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+.key-slash {
+    grid-column: 14 / 16;
+    grid-row: 3;
+}
+
+.key-caps {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+.key-lshift {
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+.key-rshift {
+    grid-column: 13 / 16;
+    grid-row: 5;
+}
+
+.key-lctrl {
+    grid-column: 1 / 3;
+    grid-row: 6;
+}
+.key-win {
+    grid-column: 3 / 4;
+    grid-row: 6;
+}
+.key-lalt {
+    grid-column: 4 / 5;
+    grid-row: 6;
+}
+.key-spacebar {
+    grid-column: 5 / 11;
+    grid-row: 6;
+}
+.key-ralt {
+    grid-column: 11 / 12;
+    grid-row: 6;
+}
+.key-fn {
+    grid-column: 12 / 13;
+    grid-row: 6;
+}
+.key-menu {
+    grid-column: 13 / 14;
+    grid-row: 6;
+}
+.key-rctrl {
+    grid-column: 14 / 16;
+    grid-row: 6;
+}
+
+.key-return {
+    grid-column: 14/ 16; 
+    grid-row: 3 / span 2;
+    height: 94px;
+}
+
+
+
+.nav-block .button,
+.number-pad .button {
+    height: 44px;
+    min-width: 44px;
+}
 
 .nav-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 6px;
+}
+
+.nav-block .key-row {
+    display: flex;
     gap: 6px;
 }
 
