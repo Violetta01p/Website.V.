@@ -1,86 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тижневий планер</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/lb4.css">
-</head>
-<body>
-
-    <div class="planner">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Практична робота 4</title>
+        <link rel="stylesheet" href="css/pz4.css">
+    </head>
+    <body>
         
-        <header class="main-header">
-            <span class="plan-title">WEEKLY PLAN</span>
-            <span class="week-of">WEEK OF<input type="text"></span>
-            <span class="healthy-habit">HEALTHY HABIT<input type="text"></span>
-            <span class="improvement">ROOM FOR IMPROVEMENT <input type="checkbox"></span>
-            <span class="rocked-it">ROCKED IT <input type="checkbox"></span>
-        </header>
-        
-        <div class="planner-grid">
+        <div class="keypad-layout">
 
-            <aside class="sidebar">
-                <div class="task-list">
-                    <h3>
-                        <span>TOP 3 GOALS</span>
-                        <span>TO DO</span>
-                    </h3>
-                    <ul>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                    </ul>
+            <div class="main-section">
+                <div class="button small-text key-esc">Esc</div>
+                <div class="button small-text key-f1">F1</div>
+                <div class="button small-text key-f2">F2</div>
+                <div class="button small-text key-f3">F3</div>
+                <div class="button small-text key-f4">F4</div>
+                <div class="button small-text key-f5">F5</div>
+                <div class="button small-text key-f6">F6</div>
+                <div class="button small-text key-f7">F7</div>
+                <div class="button small-text key-f8">F8</div>
+                <div class="button small-text key-f9">F9</div>
+                <div class="button small-text key-f10">F10</div>
+                <div class="button small-text key-f11">F11</div>
+                <div class="button small-text key-f12">F12</div>
+                
+                <div class="button key-tilde">~</div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">0</div>
+                <div class="button">-</div>
+                <div class="button">=</div>
+                <div class="button key-backspace">Backspace</div>
+
+                <div class="button key-tab">Tab</div>
+                <div class="button">Q</div>
+                <div class="button">W</div>
+                <div class="button">E</div>
+                <div class="button">R</div>
+                <div class="button">T</div>
+                <div class="button">Y</div>
+                <div class="button">U</div>
+                <div class="button">I</div>
+                <div class="button">O</div>
+                <div class="button">P</div>
+                <div class="button">[</div>
+                <div class="button">]</div>
+                <div class="button key-slash">\</div>
+
+                <div class="button key-caps">Caps</div>
+                <div class="button">A</div>
+                <div class="button">S</div>
+                <div class="button">D</div>
+                <div class="button">F</div>
+                <div class="button">G</div>
+                <div class="button">H</div>
+                <div class="button">J</div>
+                <div class="button">K</div>
+                <div class="button">L</div>
+                <div class="button">;</div>
+                <div class="button">'</div>
+                
+                <div class="button key-return">Enter</div>
+
+                <div class="button key-lshift">Shift</div>
+                <div class="button">Z</div>
+                <div class="button">X</div>
+                <div class="button">C</div>
+                <div class="button">V</div>
+                <div class="button">B</div>
+                <div class="button">N</div>
+                <div class="button">M</div>
+                <div class="button">,</div>
+               
+                <div class="button key-rshift">Shift</div>
+
+                <div class="button key-lctrl">Ctrl</div>
+                <div class="button key-win">Win</div>
+                <div class="button key-lalt">Alt</div>
+                <div class="button key-spacebar">Space</div>
+                <div class="button key-ralt">Alt</div>
+                <div class="button key-fn">Fn</div>
+                <div class="button key-menu">Menu</div>
+                <div class="button key-rctrl">Ctrl</div>
+            </div>
+
+            <div class="nav-block">
+                <div class="key-row">
+                    <div class="button small-text">PrtSc</div>
+                    <div class="button small-text">ScrLk</div>
+                    <div class="button small-text">Pause</div>
                 </div>
-                <div class="task-list everything-else">
-                    <h3>EVERYTHING ELSE</h3>
-                    <ul>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                    </ul>
+                <div class="key-row">
+                    <div class="button small-text">Ins</div>
+                    <div class="button small-text">Home</div>
+                    <div class="button small-text">PgUp</div>
                 </div>
-                <div class="task-list">
-                    <h3>NEXT WEEK</h3>
-                    <ul>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                        <li><input type="checkbox"><input type="text"></li>
-                    </ul>
+                <div class="key-row">
+                    <div class="button small-text">Del</div>
+                    <div class="button small-text">End</div>
+                    <div class="button small-text">PgDn</div>
                 </div>
-            </aside>
-            
-            <div class="day-cell monday"><h3>MONDAY <input type="checkbox"></h3>
-               <textarea placeholder = "Нотатка"> </textarea>
+                <div class="arrow-pad">
+                    <div class="button arrow arrow-up">↑</div>
+                    <div class="button arrow arrow-left">←</div>
+                    <div class="button arrow arrow-down">↓</div>
+                    <div class="button arrow arrow-right">→</div>
+                </div>
             </div>
-            <div class="day-cell tuesday"><h3>TUESDAY <input type="checkbox"></h3>
-                  <textarea placeholder = "Нотатка"> </textarea>
-            </div>
-            <div class="day-cell wednesday"><h3>WEDNESDAY <input type="checkbox"></h3>
-              <textarea placeholder = "Нотатка"> </textarea>
-            </div>
-            <div class="day-cell thursday"><h3>THURSDAY <input type="checkbox"></h3>
-           <textarea placeholder = "Нотатка"> </textarea>
-            </div>
-            <div class="day-cell friday"><h3>FRIDAY <input type="checkbox"></h3>
-              <textarea placeholder = "Нотатка"> </textarea>
-            </div>
-            <div class="day-cell saturday"><h3>SATURDAY <input type="checkbox"></h3>
-            <textarea placeholder = "Нотатка"> </textarea>
-            </div>
-            <div class="day-cell sunday"><h3>SUNDAY <input type="checkbox"></h3>
-             <textarea placeholder = "Нотатка"> </textarea>
+
+            <div class="number-pad">
+                <div class="button small-text">Num</div>
+                <div class="button small-text">/</div>
+                <div class="button small-text">*</div>
+                <div class="button small-text">-</div>
+
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button add">+</div>
+
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button return">Enter</div>
+
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button num-zero">0</div>
+                <div class="button">.</div>
             </div>
         </div>
-    </div>
-
-</body>
+        
+    </body>
 </html>
 
