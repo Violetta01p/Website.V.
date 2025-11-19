@@ -1,0 +1,237 @@
+body {
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #21243D;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header {
+  background: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+main {
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #21243D;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #FF6464;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 140px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.btn-resume {
+  background-color: #FF6464;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-resume:hover {
+  background: #cc5252;
+}
+
+.profile-photo {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* ТУТ ВАЖЛИВО: додав object-fit, щоб фото було рівним */
+.profile-photo img {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+/* Блакитний блок (на макеті Recent posts) */
+.laboratory-works {
+  margin-top: 70px;
+  background-color: #EDF7FA;
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #00A8CC;
+  font-weight: 400;
+}
+
+.view-all:hover {
+  color: #21243D;
+}
+
+.laboratory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.laboratory-card {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.laboratory-card h3 {
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.laboratory-card a {
+  color: #21243D;
+  text-decoration: none;
+}
+
+.laboratory-card a:hover {
+  color: #FF6464;
+}
+
+.laboratory-card p {
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.laboratory-card span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Нижній блок (на макеті Featured works) */
+.practical-works {
+  margin-top: 16px;
+  background-color: #FFFFFF;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.practical-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.practical-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-bottom: #E0E0E0 1px solid;
+}
+
+.practical-card img {
+  width: 246px;
+  height: 164px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.practical-card h3 {
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.practical-card a {
+  color: #21243D;
+  text-decoration: none;
+}
+
+.practical-card a:hover {
+  color: #FF6464;
+}
+
+.practical-card span {
+  background: #21243D;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 16px;
+  font-size: 18px;
+  margin: 8px 0 8px 0;
+}
+
+footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #21243D;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FF6464;
+}
