@@ -89,7 +89,7 @@ nav a:hover {
   align-items: center;
 }
 
-/* ТУТ ВАЖЛИВО: додав object-fit, щоб фото було рівним */
+
 .profile-photo img {
   width: 243px;
   height: 243px;
@@ -97,7 +97,7 @@ nav a:hover {
   object-fit: cover; 
 }
 
-/* Блакитний блок (на макеті Recent posts) */
+
 .laboratory-works {
   margin-top: 70px;
   background-color: #EDF7FA;
