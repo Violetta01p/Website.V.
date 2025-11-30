@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #21243D;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px ;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ nav a:hover {
   align-items: center;
 }
 
-/* ТУТ ВАЖЛИВО: додав object-fit, щоб фото було рівним */
+
 .profile-photo img {
   width: 243px;
   height: 243px;
@@ -97,7 +97,7 @@ nav a:hover {
   object-fit: cover; 
 }
 
-/* Блакитний блок (на макеті Recent posts) */
+
 .laboratory-works {
   margin-top: 70px;
   background-color: #EDF7FA;
@@ -164,7 +164,7 @@ nav a:hover {
   font-weight: 400;
 }
 
-/* Нижній блок (на макеті Featured works) */
+
 .practical-works {
   margin-top: 16px;
   background-color: #FFFFFF;

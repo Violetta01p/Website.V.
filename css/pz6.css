@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: #f0f8ff;
+}
+
+
+.animation-scene {
+    position: relative;
+    width: 100vh;
+    height: 155vh;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #4facfe 100%);
+   /*background-size: 400% 400%;*/
+    animation: background-wave 15s ease infinite;
+}
+
+
+@keyframes background-wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.scene-foreground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://txtrs.ru/textures/sand/sand-1.jpg'); 
+    background-repeat: repeat-x;
+    background-size: auto 60px;
+    z-index: 1;
+    animation: move-foreground 15s linear infinite;
+}
+
+@keyframes move-foreground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+.pokemon-sprite {
+    position: absolute;
+    bottom: 60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-image: url('https://img.pokemondb.net/sprites/black-white/anim/normal/luvdisc.gif');
+    background-repeat: no-repeat;
+    z-index: 2;
+    animation: floating 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes floating {
+    0% { transform: translateX(-50%) translateY(0); }
+    100% { transform: translateX(-50%) translateY(-30px); }
+}
+
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    bottom: -20px;
+    box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8);
+    animation: rise-up linear infinite;
+}
+
+.bubble-1 { width: 20px; height: 20px; left: 10%; animation-duration: 6s; animation-delay: 0s; }
+.bubble-2 { width: 35px; height: 35px; left: 30%; animation-duration: 8s; animation-delay: 2s; }
+.bubble-3 { width: 15px; height: 15px; left: 70%; animation-duration: 5s; animation-delay: 1s; }
+.bubble-4 { width: 25px; height: 25px; left: 85%; animation-duration: 7s; animation-delay: 3s; }
+
+@keyframes rise-up {
+    0% { bottom: -20px; opacity: 0; transform: translateX(0); }
+    20% { opacity: 0.8; }
+    100% { bottom: 110%; opacity: 0; transform: translateX(20px); }
+}
