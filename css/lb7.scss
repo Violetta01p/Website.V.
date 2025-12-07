@@ -1,0 +1,63 @@
+$color-bg: #c54505;
+$color-bg1: #212c1e;
+$color-card: #ffffff;
+$color-text: #1b263b;
+$color-accent: #e63946;
+$front-main: "Times New Roman", sans-serif;
+
+
+.page {
+  margin: 0;
+  background-color: $color-bg1;
+  font-family: $front-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+   flex-direction: row; 
+     gap: 40px; 
+     margin-left: 55px;
+}
+.card {
+  background-color: $color-card;
+  padding: 25px;
+  width: 670px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+  &__title {
+    color: $color-accent;
+    font-size: 55px;
+    margin-bottom: 15px;
+ 
+  
+  }
+ 
+  &__text {
+    display: none; 
+    color: $color-text;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  &__button {
+    background-color: $color-bg;
+    border: none;
+    color: white;
+    padding: 55px;
+    margin: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  details[open] .card__text {
+    display: block;
+  }
+  details[open] summary {
+    display: none;
+  }
+  details summary {
+    list-style: none;
+  }
+}

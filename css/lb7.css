@@ -1,0 +1,53 @@
+.page {
+  margin: 0;
+  background-color: #212c1e;
+  font-family: "Times New Roman", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: 55px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 670px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+}
+.card__title {
+  color: #e63946;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+.card__text {
+  display: none;
+  color: #1b263b;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+.card__button {
+  background-color: #c54505;
+  border: none;
+  color: white;
+  padding: 55px;
+  margin: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.card details[open] .card__text {
+  display: block;
+}
+.card details[open] summary {
+  display: none;
+}
+.card details summary {
+  list-style: none;
+}/*# sourceMappingURL=lb7.css.map */
