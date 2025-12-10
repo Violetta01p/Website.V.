@@ -201,6 +201,7 @@ nav a:hover {
   font-size: 16px;
   margin: 0;
 }
+
 footer {
   text-align: center;
   padding: 20px 0 50px;
@@ -211,59 +212,89 @@ footer a:hover {
   color: #FF6464;
 }
 
-@media (max-width: 1024px) {
-  .laboratory-cards {
-    flex-direction: column; 
-    gap: 20px;              
-  }
-}
 
 @media (max-width: 900px) {
-  .practical-card {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;     
-    gap: 15px;             
+    nav ul {
+   display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+    gap: 10px;
   }
-
-  .practical-card img {
-    width: 200px;        
-    height: auto;
-    max-height: 220px;
-    display: block;
+    .practical-card {
+    flex-direction: column;
+    align-items: center;   
+    gap: 15px;              
   }
 
   .practical-cards-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+    align-items: center;    
+    text-align: center;     
   }
 
-  .practical-card span {
-    align-self: center;     
-  }
+.profile {
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items: center;            
+  text-align: center;              
+  margin: 60px 0;
 }
 
+.profile-photo {
+  display: flex;                   
+  justify-content: center;       
+  width: 100%;                    
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  display: block;                   
+}
+@media (max-width: 1024px) {
+  .laboratory-cards {
+    flex-direction: column;
+  }
+
+}}
+
 @media (max-width: 600px) {
+
+
   body {
     padding: 0 10px;
+  }
+  .profile{
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 20px;
+}
+    .practical-card {
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;              
+  }
+
+  .practical-cards-text {
+    align-items: center;    
+    text-align: center;     
+  }
+ nav ul {
+   display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+    gap: 10px;
+  } 
+
+  nav a {
+    font-size: 14px;
   }
 
   h1 { font-size: 26px; }
   h2 { font-size: 20px; }
   h3 { font-size: 22px; }
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-  }
-
-  nav a {
-    font-size: 14px;
-  }
+ 
 
   .laboratory-card {
     padding: 20px;
